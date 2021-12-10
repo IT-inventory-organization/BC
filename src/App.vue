@@ -1,13 +1,16 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <!-- <core-app-bar></core-app-bar> -->
     <router-view/>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    CoreAppBar: () => import('@/components/base/AppBar')
+  }
 }
 </script>
 
